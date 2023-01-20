@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>MaximSelivanovCV</title>
+</head>
+<body>
+    <header class="header">
+        <div class="hole"></div>
+        <div class="header__photo">
+            <img class="myphoto" src="./img/myphoto.JPG" alt="myphoto">
+        </div>
+        <div class="header__info">
+            <p class="name">Maxim Selivanov</p>
+            <p class="age">13.12.1982</p>
+            <p class="city">Minsk, The Republic of Belarus</p>
+            <p class="contacts">
+                <a href="tel:+375293240549">tel: +375-29-324-05-49</a>
+                <br>
+                <a href="mailto:maxim.selivanov.dev@gmail.com">email: maxim.selivanov.dev@gmail.com</a>
+            </p>
+        </div>
+    </header>
+    <main class="main">
+        <article class="main__education">
+            <h2 class="article-title">Education</h2>
+            <ul class="education-list">
+                <li>Belarusian State Economic University (2008) - "The economy of the enterprise" - economist</li>
+                <li>IT-Academy (2022) - "Web application development with JavaScript" - frontend developer</li>
+            </ul>                         
+        </article>
+        <article class="main__skills">
+            <h2 class="article-title">My skills</h2>
+            <ul class="skills-list">
+                <li>English level - B1</li>
+                <li>HTML/CSS/JS level - beginner</li>
+                <li>Photoshop level - advanced user (portrait retouching, collage, photomontage)</li>
+                <li>Emotional intelegence</li>
+                <li>Adaptivity</li> 
+            </ul>
+        </article>
+        <article class="main__info">
+            <h2 class="article-title">About me</h2>
+            <p class="main__info-text">I graduated from the Belorusian State Economic University in 2008 as economist.
+                But my working experience started in 2003 when I became planing economist of
+                the JSC "Belarusrezinotechnica". I worked as an economist for 10 years and changed 
+                three organizations, but in 2013 I decided to stop my economist career and changed my activity sphere.
+                I became an individual entrepreneur in the sphere of photography and opened my own
+                photo studio where I worked as a photographer.
+                <br>
+                However, I like to try myself in new fields of activity, gain new knowledge, 
+                gain experience and apply it in new directions. And I decided to try to learn programming.
+                I tried different directions and eventually chose frontend development, because I belive
+                it is one of the most creative direction.
+                <br>
+                I graduated from IT-academy in 2022 and made my first project using HTML/CSS/JavaScript. 
+                It is an analog modeling synthesizer  with basic subtractive synthesis modules, 
+                visualization and ability to connect and play midi keyboard. 
+                You can find this app by following the 
+                <a class="project-link" href="https://maximselivanov.github.io/maksynth/" target="_blank">
+                    LINK
+                </a>
+            </p>
+        </article>
+        <article class="main__hobby">
+            <h2 class="article-title">My hobbies</h2>
+            <p class="main__hobby-text">
+                My two main hobbies are photography and music.
+                <br>
+                For photography I prefere to use Fujifilm X100S camera. It is a very stylish compact
+                rangefinder-like camera with very impressive picture quality which helps me to create 
+                photos in different ways of photography and especially in portrait and street 
+                photography because they are my favorite genres.
+                <br>
+                As for music I'm keen in different types of synths. Especially analog subtractive sinthesys.
+                I have an analog synth Arturia Minibrute and I like to explore and create new sounds
+                using this amazing synth. And of course I'm trying ro create my own musical compisitions
+                using GarageBand on my iPhone.
+                <br>
+                And I realy love to listen to music! I like different genres of electronic, metal, 
+                rock and jazz. I'm always on the lookout for new genres and musicians. And I even still 
+                have a big collection of CDs.
+            </p>
+        </article>
+        <div class="main__myphotography">
+            <h2 class="article-title">My photography</h2>
+            <div class="slider" id="slider">
+                <img class="slider-img" src="/img/myphotography/001_resize.jpg" alt="001">
+                <img class="slider-img" src="/img/myphotography/002_resize.jpg" alt="002">
+                <img class="slider-img" src="/img/myphotography/003_resize.jpg" alt="003">
+                <img class="slider-img" src="/img/myphotography/004_resize.jpg" alt="004">
+                <img class="slider-img" src="/img/myphotography/005_resize.jpg" alt="005">
+                <img class="slider-img" src="/img/myphotography/006_resize.jpg" alt="006">                   
+                <img class="slider-img" src="/img/myphotography/007_resize.jpg" alt="007">
+                <img class="slider-img" src="/img/myphotography/008_resize.jpg" alt="008">
+                <img class="slider-img" src="/img/myphotography/009_resize.jpg" alt="009">
+                <img class="slider-img" src="/img/myphotography/010_resize.jpg" alt="010">
+            </div>
+            <div class="slider-controls">
+                <button id="btnPrev">Prev</button>
+                <button id="btnNext">Next</button>
+            </div>
+        </div>
+        <div class="main__mymusic">
+            <h2 class="article-title">My music</h2>
+            <div class="main__mymusic-music">
+                <audio controls src="./audio/new.mp3" title="new"></audio>
+                <audio>
+                    <source src="./audio/new.ogg">
+                </audio>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__social">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/max-selivanov/" target="_blank">
+                <img class="link-img" src="./img/free-icon-linkedin-1384088_resize.png" alt="linkedin">
+            </a>
+            <a class="footer__social-link" href="https://github.com/MaximSelivanov" target="_blank">
+                <img class="link-img" src="./img/free-icon-github-2111432_resize.png" alt="github">
+            </a>
+            <a class="footer__social-link" href="https://www.instagram.com/_maksee_/" target="_blank">
+                <img class="link-img" src="./img/free-icon-instagram-1384031_resize.png" alt="instagram">
+            </a>
+            <a class="footer__social-link" href="https://www.instagram.com/_maksee_/" target="_blank">
+                <img class="link-img" src="./img/free-icon-vkontakte-3536628_resize.png" alt="vk">
+            </a>
+            <a class="footer__social-link" href="https://www.instagram.com/_maksee_/" target="_blank">
+                <img class="link-img" src="./img/free-icon-facebook-2175193_resize.png" alt="facebook">
+            </a>
+        </div>
+        <p class="year">Maxim Selivanov &copy 2023</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
